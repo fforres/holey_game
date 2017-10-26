@@ -20,10 +20,10 @@
 <script>
   var accion = document.getElementById('accion');
   var agujero = document.getElementById('agujero');
-  var text = Array.from(document.querySelectorAll('.text'))[0];
+  var text = document.getElementById('accion');
   text.addEventListener('click', function() {
-    accion.classList = 'container hide'
-    agujero.classList = 'container show'
+    accion.classList = 'container hide';
+    agujero.classList = 'container show';
   })
 </script>
 </html>
