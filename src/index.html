@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="accion" class="container show">
+    <h1 class="text">
+      Toca la pantalla para continuar
+    </h1>
+  </div>
+  <div id="agujero" class="container hide">
+    <img class="icon" src="./hand.svg" alt="" />
+  </div>
+</body>
+<script>
+  var accion = document.getElementById('accion');
+  var agujero = document.getElementById('agujero');
+  var text = Array.from(document.querySelectorAll('.text'))[0];
+  text.addEventListener('click', function() {
+    accion.classList = 'container hide'
+    agujero.classList = 'container show'
+  })
+</script>
+</html>
